@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paddy Bussiness Management System</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+</head>
+
+<body id="body-pd">
+    <header class="header" id="header">
+        <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
+        <div>
+            <h2>Welcome To PBMS</h2>
+        </div>
+        <div></div>
+    </header>
+    <div class="l-navbar" id="nav-bar">
+        <nav class="nav">
+            <div> <a href="#" class="nav_logo"> <i class='bx bx-layer nav_logo-icon'></i> <span
+                        class="nav_logo-name">PBMS</span> </a>
+                <div class="nav_list"> <a href="" class="nav_link active"> <i class='bx bx-grid-alt nav_icon'></i>
+                        <span class="nav_name">Dashboard</span> </a> <a href="" class="nav_link">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--Container Main start-->
+    <div class="container prices bg-dark">
+        <!-- <div class="jumbotron pricing-tables-jumbotron">
+            <h2>Choose A Log-In</h2>
+        </div> -->
+        <div class="row">
+            <div class="col-sm-4 col-md-4">
+                <div class="option">
+                    <div class="option-title">
+                        <h3>Admin</h3>
+                        <span>Adminstrator login</span>
+                    </div>
+                    <div class="option-list">
+                        <ul class="item-list">
+                            <li>view customer information</li>
+                            <li>Add/modify/delete/view manager information</li>
+                            <li>Add/modify/delete/view Goods information</li>
+                            <li>View customer transaction information</li>
+                            <li><br></li>
+                            <li>
+                                <p><br></p>
+                            </li>
+                            <li>
+                                <p></p>
+                            </li>
+                        </ul>
+                        <a href="dashbord/admin/login.php"><button type="button" class="btn btn-success big"><i
+                                    class="fa fa-hand-o-right hided-icon big"></i> Sign In</button></a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-4">
+                <div class="option">
+                    <div class="option-title">
+                        <h3>Manager</h3>
+                        <span>Manager login</span>
+                    </div>
+
+                    <div class="option-list">
+                        <ul class="item-list">
+                            <li>Add/modify/delete/view Customer information</li>
+                            <li>Make transaction with a customer</li>
+                            <li>View transaction report</li>
+                            <li>View due information</li>
+                            <!-- <li>Generate a receipt for customer</li> -->
+                            <!-- <li>Generate statement for a customer</li> -->
+                            <li>Replay query of a customer</li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <a href="dashbord/manager/login.php"><button type="button" class="btn btn-success big"><i
+                                    class="fa fa-hand-o-right hided-icon big"></i> Sign In</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-4">
+                <div class="option">
+                    <div class="option-title">
+                        <h3>Customer</h3>
+                        <span>Customer login</span>
+                    </div>
+                    <div class="option-list">
+                        <ul class="item-list">
+                            <li>View individual transaction report</li>
+                            <li>View notification</li>
+                            <li>Send query to manager</li>
+                            <li>View query replay</li>
+                            <li><br></li>
+                            <li>
+                                <p><br></p>
+                            </li>
+                            <li>
+                                <p></p>
+                            </li>
+                        </ul>
+                        <a href="dashbord/customer/login.php"><button type="button" class="btn btn-success big"><i
+                                    class="fa fa-hand-o-right hided-icon big"></i> Sign In</button></a>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+
+    <!-- you need to include the shieldui css and js assets in order for the grids to work -->
+    <link rel="stylesheet" type="text/css"
+        href="http://www.prepbootstrap.com/Content/shieldui-lite/dist/css/light/all.min.css" />
+    <script type="text/javascript"
+        src="http://www.prepbootstrap.com/Content/shieldui-lite/dist/js/shieldui-lite-all.min.js"></script>
+
+    <style type="text/css">
+        .prices {
+            padding-bottom: 40px;
+            color: #fff;
+            background: #B3C0DD;
+            background: -moz-linear-gradient(-45deg, #3f4c6b 0%, #3f4c6b 100%);
+            background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #3f4c6b), color-stop(100%, #3f4c6b));
+            background: -webkit-linear-gradient(-45deg, #B3C0DD 0%, #3f4c6b 100%);
+            background: -o-linear-gradient(-45deg, #B3C0DD 0%, #3f4c6b 100%);
+            background: -ms-linear-gradient(-45deg, #B3C0DD 0%, #3f4c6b 100%);
+            background: linear-gradient(135deg, #B3C0DD 0%, #3f4c6b 100%);
+        }
+
+        .pricing-tables-jumbotron {
+            padding-bottom: 8px;
+            text-align: center;
+            background: none;
+        }
+
+        .big {
+            font-size: 37px;
+        }
+
+        .option {
+            background: #f9f9f9;
+            box-shadow: 0 0 1px rgba(0, 0, 0, .2);
+            border-radius: 4px 4px 0 0;
+            position: relative;
+            margin: 20px 0;
+            text-align: center;
+            color: #333;
+        }
+
+        .option:hover .hided-icon {
+            color: #fff;
+            padding: 0 10px;
+        }
+
+        .option>.option-title {
+            padding: 20px;
+        }
+
+        .option>.option-title>h3 {
+            font-weight: bold;
+            font-size: 32px;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        .option>.option-title>span {
+            font-style: italic;
+            font-size: 16px;
+        }
+
+        .option>.option-price {
+            background: #fff;
+            padding: 0 0 10px;
+            color: #0FB112;
+        }
+
+        .option>.option-price>.price {
+            display: block;
+            font-size: 72px;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .option>.option-price>.period {
+            font-size: 14px;
+        }
+
+        .option .option-list {
+            padding: 0;
+        }
+
+        .option .item-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .option .item-list li:nth-child(even) {
+            background: #fdfdfd;
+        }
+
+        .option .item-list>li {
+            padding: 10px 5px;
+            font-size: 16px;
+        }
+
+        .option .btn {
+            width: 100%;
+            padding: 18px 8px;
+            border-radius: 0;
+            border: none;
+            text-transform: uppercase;
+        }
+
+        .option .btn-success {
+            color: #fff;
+            background: #0FB112;
+        }
+
+        .option .btn-success:hover {
+            background: #1d7019;
+        }
+
+        .option .hided-icon {
+            color: #0FB112;
+            margin-left: -14px;
+            -webkit-transition: all 0.7s ease-in-out;
+            -moz-transition: all 0.7s ease-in-out;
+            -o-transition: all 0.7s ease-in-out;
+            transition: all 0.7s ease-in-out;
+        }
+    </style>
+    <!-- Pricing Table with Columns - END -->
+    <!--Container Main end-->
+    <script src="js/toggle.js"></script>
+    <footer class=" text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3">
+            Copyright:&copy;2022 Paddy Bussiness Management System
+            <p>Developer: Md Rafiqul Islam</p>
+        </div>
+        <!-- Copyright -->
+    </footer>
+</body>
+
+</html>
